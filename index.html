@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="musicPlayer">
+        <div class="container">
+            <!-- top icons -->
+            <div class="icons">
+                <a href="#"><i class="fas fa-bars"></i></a>
+                <h1>MY MUSIC</h1>
+                <a href="#"><i class="far fa-heart"></i></a>
+            </div>
+            <!-- coverimg -->
+            <div class="coverImg">
+                <img src="img1.jpg" alt=""/>
+            </div>
+            <!-- title -->
+            <div class="songTitle">
+                <h1>ScreamAcode</h1>
+            </div>
+            <!-- time -->
+            <div class="time">
+                00.00
+                <span></span>
+                00.00
+            </div>
+            <!-- seek bar -->
+            <div class="seek">
+                <div class="fill"></div>
+            </div>
+            <!-- audio btn -->
+             <div class="playBtn">
+                 <a href="#" onclick="prevAudio()"><i class="fas fa-backward"></i></a>
+                 <a href="#" class="playPause" onclick="togglePlayPause()"><i class="far fa-play-circle "></i></a>
+                 <a href="#"onclick="nextAudio()"><i class="fas fa-forward"></i></a>
+             </div>
+             <div class="repeatBtn">
+                 <button class="decrease">-</button>
+                 <a href="#" class="volumeUp">
+                    <i class="fas fa-volume-up"></i>
+                 </a>
+                 <button class="increase">+</button>
+             </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>
